@@ -7,8 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Video Info</h1>
+    <div class="container">
+            <h1 class="py-3">Video Info</h1>
+
+            <div class="">
+                <label for="" class="">Select Video</label>
+                <br>
+                <input type="file" accept="video/*" />
+            </div>
+            <button class="mt-5">Get info</button>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+        })
+    </script>
+   
 </body>
 </html>
